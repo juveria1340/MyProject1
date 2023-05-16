@@ -1,0 +1,16 @@
+name: Environment Variables in workflows
+on:
+  workflow_dispatch
+  
+env:
+  USER_ID: ${{github.actor}}
+  
+jobs:
+  Job-1:
+    runs-on: ubuntu-latest
+    env:
+      user: Juveria
+    steps:
+      - name: print env vars
+        run: echo "Hello The user is $user and userId is $USER_ID"
+      
