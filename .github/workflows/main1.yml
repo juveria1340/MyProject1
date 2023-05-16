@@ -1,0 +1,19 @@
+name: Trial
+on:
+  push:
+    branches: [ "main" ]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - uses: actions/checkout@v3
+      - name: Install npm
+        run: | 
+          sudo apt install nodejs
+          node -v
+          sudo apt install npm
+          npm -v
+               
+        
+      
