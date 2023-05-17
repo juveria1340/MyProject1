@@ -11,8 +11,9 @@ jobs:
       - name: Install npm
         run: | 
           sudo apt install nodejs
-          node -v
+          echo "Version is ${node -v}"
           sudo apt install npm
+          npm init
           
         
                
