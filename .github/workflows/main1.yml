@@ -12,6 +12,7 @@ jobs:
         run: | 
           sudo apt install nodejs
           node -v
+          sudo apt install npm
           
         
                
